@@ -1,33 +1,35 @@
 package ru.gb.homework1_famly_tree;
 
-import ru.gb.vending_machine_d.product.Product;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FamilyTree {
-    private String Rod;
-    private List<Human> Humanlist;
+public class FamilyTree implements Serializable {
+    private String family;
+    private List<Human> humanList;
 
-    public FamilyTree(String Rod) {
-        this.Rod = Rod;
-        Humanlist = new ArrayList<>();
+    public FamilyTree(String rod) {
+        this.family = rod;
+        humanList = new ArrayList<>();
     }
 
     public void addHuman(Human human) {
-        Humanlist.add(human);
+        humanList.add(human);
     }
 
-    public String getRodInfo(){
-        StringBuilder StringBuilder = new StringBuilder();
-        StringBuilder.append("Список людей:\n");
-        for (Human human: Humanlist) {
-            StringBuilder.append(human);
-            StringBuilder.append("\n");
+    public String getFamilyInfo(){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Список людей:\n");
+        for (Human human: humanList) {
+            stringBuilder.append(human);
+            stringBuilder.append("\n");
         }
-        return StringBuilder.toString();
+        return stringBuilder.toString();
     }
-
+    @Override
+    public String toString(){
+        return getFamilyInfo();
+    }
 
     }
 
