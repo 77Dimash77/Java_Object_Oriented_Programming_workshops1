@@ -1,12 +1,16 @@
 package ru.gb.homework1_famly_tree;
 
-import java.time.LocalDate;
+import ru.gb.homework1_famly_tree.Auxiliary.Gender;
+import ru.gb.homework1_famly_tree.Auxiliary.PhoneNumber;
+import ru.gb.homework1_famly_tree.Tree.FamilyTree;
+import ru.gb.homework1_famly_tree.Tree.Human;
 
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
         FamilyTree familyTree = new FamilyTree("Mukashev");
-        Human human_1 = new Human("Mukashev","Dimash",Gender.male, LocalDate.of(1992,8,2),null,1);
+        Human human_1 = new Human("Mukashev","Dimash", Gender.male, LocalDate.of(1992,8,2),null,1);
         Human human_2 = new Human("Mukashev","Bagdat",Gender.male, LocalDate.of(1975,7,5),null,2);
         Human human_3 = new Human("Mukashev","Galia",Gender.female, LocalDate.of(1976,9,7),null,2);
 
@@ -16,8 +20,6 @@ public class Main {
 
         PhoneNumber num1 = new PhoneNumber(111111111);
         PhoneNumber num2 = new PhoneNumber(222222222);
-
-
 
         human_1.addSpouse(null);
         human_2.addSpouse(human_3);
@@ -47,13 +49,21 @@ public class Main {
         human_1.addTelephone(num1);
         human_2.addTelephone(num2);
 
-//        System.out.println(familyTree.getFamilyInfo());
-//        System.out.println(human_2.getChildrenNames());
-//        System.out.println(human_1.getContactInfo());
+        for (Human human: familyTree){System.out.println(human);} // Использование итератора
 
-        FileHandler.saveFamilyTree(familyTree, "ru/gb/homework1_famly_tree/familyTree.ser");
-        FamilyTree loadedTree = FileHandler.loadFamilyTree("ru/gb/homework1_famly_tree/familyTree.ser");
-        System.out.println(loadedTree);
+        familyTree.sortByName();
+        familyTree.sortBySurname();
+        familyTree.sortByAge();
+        System.out.println(familyTree.getFamilyInfo());
+
+//     System.out.println(familyTree.getFamilyInfo());
+//      System.out.println(human_2.getChildrenNames());
+//      System.out.println(human_1.getContactInfo());
+
+//      FileHandler.saveFamilyTree(familyTree, "ru/gb/homework1_famly_tree/familyTree.ser");
+//      FamilyTree loadedTree = FileHandler.loadFamilyTree("ru/gb/homework1_famly_tree/familyTree.ser");
+//      System.out.println(loadedTree);
+
     }
 }
-// TODO sdelat zdes zapusk sohranenia
+

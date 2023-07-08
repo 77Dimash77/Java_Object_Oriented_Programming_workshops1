@@ -1,4 +1,6 @@
-package ru.gb.homework1_famly_tree;
+package ru.gb.homework1_famly_tree.FileSave;
+import ru.gb.homework1_famly_tree.Tree.FamilyTree;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;

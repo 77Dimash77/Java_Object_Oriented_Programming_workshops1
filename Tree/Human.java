@@ -1,4 +1,8 @@
-package ru.gb.homework1_famly_tree;
+package ru.gb.homework1_famly_tree.Tree;
+
+import ru.gb.homework1_famly_tree.Auxiliary.Contactable;
+import ru.gb.homework1_famly_tree.Auxiliary.Gender;
+import ru.gb.homework1_famly_tree.Auxiliary.PhoneNumber;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -6,24 +10,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Human implements Contactable, Serializable {
-    private String familia;
-    private String imia;
+    private String surname;
+    private String name;
     private Gender gender;
     private LocalDate dateOfBirth;
     private LocalDate dateOfd;
-    private Integer pokolenie;
+    private Integer generation;
     private List<Human> children;
     private List<Human> parents;
     private Human spouse;
     private List<PhoneNumber> telephones;
 
-    public Human(String familia, String imia, Gender gender, LocalDate dateOfBirth, LocalDate dateOfd, Integer pokolenie) {
-        this.familia = familia;
-        this.imia = imia;
+    public Human(String surname, String name, Gender gender, LocalDate dateOfBirth, LocalDate dateOfd, Integer gebation) {
+        this.surname = surname;
+        this.name = name;
         this.gender = gender;
         this.dateOfBirth = dateOfBirth;
         this.dateOfd = dateOfd;
-        this.pokolenie = pokolenie;
+        this.generation = gebation;
         this.children = new ArrayList<>();
         this.parents = new ArrayList<>();
         this.telephones = new ArrayList<>();
@@ -41,12 +45,12 @@ public class Human implements Contactable, Serializable {
         this.spouse = spouse;
     }
 
-    public String getFamilia() {
-        return familia;
+    public String getSurname() {
+        return surname;
     }
 
-    public String getImia() {
-        return imia;
+    public String getName() {
+        return name;
     }
 
     public Gender getGender() {
@@ -61,8 +65,8 @@ public class Human implements Contactable, Serializable {
         return dateOfd;
     }
 
-    public int getPokolenie() {
-        return pokolenie;
+    public int getGeneration() {
+        return generation;
     }
 
     public List<Human> getChildren() {
@@ -80,17 +84,17 @@ public class Human implements Contactable, Serializable {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Фамилия: ").append(familia).append("\n");
-        sb.append("Имя: ").append(imia).append("\n");
+        sb.append("Фамилия: ").append(surname).append("\n");
+        sb.append("Имя: ").append(name).append("\n");
         sb.append("Пол: ").append(gender).append("\n");
         sb.append("Дата рождения: ").append(dateOfBirth).append("\n");
         sb.append("Дата смерти: ").append(dateOfd).append("\n");
-        sb.append("Поколение: ").append(pokolenie).append("\n");
+        sb.append("Поколение: ").append(generation).append("\n");
 
         if (!children.isEmpty()) {
             sb.append("Дети: ");
             for (Human child : children) {
-                sb.append(child.getImia()).append(" ").append(child.getFamilia()).append(", ");
+                sb.append(child.getName()).append(" ").append(child.getSurname()).append(", ");
             }
             sb.delete(sb.length() - 2, sb.length()); // Удаление лишней запятой и пробела
             sb.append("\n");
@@ -99,14 +103,14 @@ public class Human implements Contactable, Serializable {
         }
 
         if (spouse != null) {
-            sb.append("Супруг(а): ").append(spouse.getImia()).append(" ").append(spouse.getFamilia()).append("\n");
+            sb.append("Супруг(а): ").append(spouse.getName()).append(" ").append(spouse.getSurname()).append("\n");
         } else {
             sb.append("Супруг(а) отсутствует\n");
         }
         if (!parents.isEmpty()) {
             sb.append("Родители: ");
             for (Human parent : parents) {
-                sb.append(parent.getImia()).append(" ").append(parent.getFamilia()).append(", ");
+                sb.append(parent.getName()).append(" ").append(parent.getSurname()).append(", ");
             }
             sb.delete(sb.length() - 2, sb.length()); // Удаление лишней запятой и пробела
             sb.append("\n");
@@ -126,7 +130,7 @@ public class Human implements Contactable, Serializable {
     public String getChildrenNames() {
         StringBuilder sb = new StringBuilder();
         for (Human child : children) {
-            sb.append(child.getImia()).append(" ").append(child.getFamilia()).append(", ");
+            sb.append(child.getName()).append(" ").append(child.getSurname()).append(", ");
         }
         if (sb.length() > 0) {
             sb.setLength(sb.length() - 2);
@@ -141,5 +145,9 @@ public class Human implements Contactable, Serializable {
     }
     return sb.toString();
 }
+
+    public int compareTo(Human o) {
+        return name.compareTo(o.name);
+    }
 }
 
