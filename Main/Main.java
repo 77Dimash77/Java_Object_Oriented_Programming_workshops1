@@ -1,9 +1,9 @@
-package ru.gb.homework1_famly_tree;
+package ru.gb.homework1_famly_tree.Main;
 
-import ru.gb.homework1_famly_tree.Auxiliary.Gender;
-import ru.gb.homework1_famly_tree.Auxiliary.PhoneNumber;
+import ru.gb.homework1_famly_tree.Enums.Gender;
+import ru.gb.homework1_famly_tree.Model.PhoneNumber;
 import ru.gb.homework1_famly_tree.Tree.FamilyTree;
-import ru.gb.homework1_famly_tree.Tree.Human;
+import ru.gb.homework1_famly_tree.Model.Human;
 
 import java.time.LocalDate;
 
@@ -49,7 +49,7 @@ public class Main {
         human_1.addTelephone(num1);
         human_2.addTelephone(num2);
 
-        for (Human human: familyTree){System.out.println(human);} // Использование итератора
+        for (Object human: familyTree){System.out.println(human);} // Использование итератора
 
         familyTree.sortByName();
         familyTree.sortBySurname();

@@ -1,4 +1,4 @@
-package ru.gb.homework1_famly_tree.Auxiliary;
+package ru.gb.homework1_famly_tree.Model;
 
 import java.io.Serializable;
 

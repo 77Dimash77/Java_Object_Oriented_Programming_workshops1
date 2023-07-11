@@ -1,8 +1,7 @@
-package ru.gb.homework1_famly_tree.Tree;
+package ru.gb.homework1_famly_tree.Model;
 
-import ru.gb.homework1_famly_tree.Auxiliary.Contactable;
-import ru.gb.homework1_famly_tree.Auxiliary.Gender;
-import ru.gb.homework1_famly_tree.Auxiliary.PhoneNumber;
+import ru.gb.homework1_famly_tree.Interfaces.Contactable;
+import ru.gb.homework1_famly_tree.Enums.Gender;
 
 import java.io.Serializable;
 import java.time.LocalDate;

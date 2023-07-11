@@ -1,31 +1,31 @@
 package ru.gb.homework1_famly_tree.Tree;
 
-import ru.gb.homework1_famly_tree.Auxiliary.HumanComporatorByAge;
-import ru.gb.homework1_famly_tree.Auxiliary.HumanComporatorByName;
-import ru.gb.homework1_famly_tree.Auxiliary.HumanComporatorBySurname;
+import ru.gb.homework1_famly_tree.Comparators.HumanComporatorByAge;
+import ru.gb.homework1_famly_tree.Comparators.HumanComporatorByName;
+import ru.gb.homework1_famly_tree.Comparators.HumanComporatorBySurname;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class FamilyTree implements Serializable,Iterable<Human> {
+public class FamilyTree<E> implements Serializable,Iterable<E> {
     private String family;
-    private List<Human> humanList;
+    private List<E> humanList;
 
     public FamilyTree(String clan) {
         this.family = clan;
         humanList = new ArrayList<>();
     }
 
-    public void addHuman(Human human) {
+    public void addHuman(E human) {
         humanList.add(human);
     }
 
     public String getFamilyInfo() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Список людей:\n");
-        for (Human human : humanList) {
+        for (E human : humanList) {
             stringBuilder.append(human);
             stringBuilder.append("\n");
         }
@@ -47,7 +47,7 @@ public class FamilyTree implements Serializable,Iterable<Human> {
         humanList.sort(new HumanComporatorByAge());
     }
     @Override
-    public Iterator<Human> iterator() {
+    public Iterator<E> iterator() {
         return humanList.iterator();
     }
 }
