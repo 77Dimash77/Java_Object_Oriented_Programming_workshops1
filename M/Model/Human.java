@@ -1,7 +1,7 @@
-package ru.gb.homework1_famly_tree.Model;
+package ru.gb.homework1_famly_tree.M.Model;
 
-import ru.gb.homework1_famly_tree.Interfaces.Contactable;
-import ru.gb.homework1_famly_tree.Enums.Gender;
+import ru.gb.homework1_famly_tree.M.Interfaces.Contactable;
+import ru.gb.homework1_famly_tree.M.Enums.Gender;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -20,13 +20,13 @@ public class Human implements Contactable, Serializable {
     private Human spouse;
     private List<PhoneNumber> telephones;
 
-    public Human(String surname, String name, Gender gender, LocalDate dateOfBirth, LocalDate dateOfd, Integer gebation) {
+    public Human(String surname, String name, Gender gender, LocalDate dateOfBirth, LocalDate dateOfd, Integer generation) {
         this.surname = surname;
         this.name = name;
         this.gender = gender;
         this.dateOfBirth = dateOfBirth;
         this.dateOfd = dateOfd;
-        this.generation = gebation;
+        this.generation = generation;
         this.children = new ArrayList<>();
         this.parents = new ArrayList<>();
         this.telephones = new ArrayList<>();

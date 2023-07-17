@@ -1,10 +1,10 @@
-package ru.gb.homework1_famly_tree.Interfaces;
+package ru.gb.homework1_famly_tree.M.Tree;
 
-import ru.gb.homework1_famly_tree.Model.Human;
+import ru.gb.homework1_famly_tree.M.Model.Human;
 
 import java.time.LocalDate;
 
-public interface GroupItem {
+public interface TreeItem<T> {
     String getSurname();
     int getAge();
 

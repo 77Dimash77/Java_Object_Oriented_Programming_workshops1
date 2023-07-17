@@ -1,8 +1,8 @@
-package ru.gb.homework1_famly_tree.Tree;
+package ru.gb.homework1_famly_tree.M.Tree;
 
-import ru.gb.homework1_famly_tree.Comparators.HumanComporatorByAge;
-import ru.gb.homework1_famly_tree.Comparators.HumanComporatorByName;
-import ru.gb.homework1_famly_tree.Comparators.HumanComporatorBySurname;
+import ru.gb.homework1_famly_tree.M.Comparators.HumanComporatorByAge;
+import ru.gb.homework1_famly_tree.M.Comparators.HumanComporatorByName;
+import ru.gb.homework1_famly_tree.M.Comparators.HumanComporatorBySurname;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -13,8 +13,7 @@ public class FamilyTree<E> implements Serializable,Iterable<E> {
     private String family;
     private List<E> humanList;
 
-    public FamilyTree(String clan) {
-        this.family = clan;
+    public FamilyTree() {
         humanList = new ArrayList<>();
     }
 

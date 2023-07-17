@@ -1,15 +1,15 @@
-package ru.gb.homework1_famly_tree.Main;
+package ru.gb.homework1_famly_tree;
 
-import ru.gb.homework1_famly_tree.Enums.Gender;
-import ru.gb.homework1_famly_tree.Model.PhoneNumber;
-import ru.gb.homework1_famly_tree.Tree.FamilyTree;
-import ru.gb.homework1_famly_tree.Model.Human;
+import ru.gb.homework1_famly_tree.M.Enums.Gender;
+import ru.gb.homework1_famly_tree.M.Model.PhoneNumber;
+import ru.gb.homework1_famly_tree.M.Tree.FamilyTree;
+import ru.gb.homework1_famly_tree.M.Model.Human;
 
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        FamilyTree familyTree = new FamilyTree("Mukashev");
+        FamilyTree familyTree = new FamilyTree();
         Human human_1 = new Human("Mukashev","Dimash", Gender.male, LocalDate.of(1992,8,2),null,1);
         Human human_2 = new Human("Mukashev","Bagdat",Gender.male, LocalDate.of(1975,7,5),null,2);
         Human human_3 = new Human("Mukashev","Galia",Gender.female, LocalDate.of(1976,9,7),null,2);

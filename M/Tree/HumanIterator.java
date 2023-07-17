@@ -1,4 +1,4 @@
-package ru.gb.homework1_famly_tree.Iterator;
+package ru.gb.homework1_famly_tree.M.Tree;
 
 import java.util.Iterator;
 import java.util.List;

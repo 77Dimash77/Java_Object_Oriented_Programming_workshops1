@@ -1,4 +1,4 @@
-package ru.gb.homework1_famly_tree.Interfaces;
+package ru.gb.homework1_famly_tree.M.Interfaces;
 
 
 public interface Contactable {
