@@ -1,6 +1,6 @@
-package ru.gb.final_famly_tree.Model.Helpers;
+package ru.gb.FINAL.final_famliy_tree.Model.Helpers;
 
-import ru.gb.final_famly_tree.Model.Human;
+import ru.gb.FINAL.final_famliy_tree.Model.Human;
 
 import java.time.LocalDate;
 

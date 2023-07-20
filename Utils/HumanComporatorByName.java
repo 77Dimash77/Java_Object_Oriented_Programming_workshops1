@@ -1,7 +1,7 @@
-package ru.gb.final_famly_tree.Utils;
+package ru.gb.FINAL.final_famliy_tree.Utils;
 
 
-import ru.gb.final_famly_tree.Model.Helpers.TreeItem;
+import ru.gb.FINAL.final_famliy_tree.Model.Helpers.TreeItem;
 
 import java.util.Comparator;
 

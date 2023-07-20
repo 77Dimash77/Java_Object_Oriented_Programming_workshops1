@@ -1,4 +1,4 @@
-package ru.gb.final_famly_tree.View;
+package ru.gb.FINAL.final_famliy_tree.View;
 
 public interface View {
     void printAnswer(String text);

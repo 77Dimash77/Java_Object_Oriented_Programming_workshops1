@@ -1,10 +1,10 @@
-package ru.gb.final_famly_tree.Presentor;
+package ru.gb.FINAL.final_famliy_tree.Presentor;
 
-import ru.gb.final_famly_tree.Model.FamilyTree;
-import ru.gb.final_famly_tree.Model.Human;
-import ru.gb.final_famly_tree.Utils.HumanComporatorByAge;
-import ru.gb.final_famly_tree.Utils.HumanComporatorByName;
-import ru.gb.final_famly_tree.Model.Gender;
+import ru.gb.FINAL.final_famliy_tree.Model.FamilyTree;
+import ru.gb.FINAL.final_famliy_tree.Model.Human;
+import ru.gb.FINAL.final_famliy_tree.Utils.HumanComporatorByAge;
+import ru.gb.FINAL.final_famliy_tree.Utils.HumanComporatorByName;
+import ru.gb.FINAL.final_famliy_tree.Model.Gender;
 
 
 import java.time.LocalDate;

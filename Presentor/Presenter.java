@@ -1,8 +1,8 @@
-package ru.gb.final_famly_tree.Presentor;
+package ru.gb.FINAL.final_famliy_tree.Presentor;
 
 
-import ru.gb.final_famly_tree.Model.Gender;
-import ru.gb.final_famly_tree.View.View;
+import ru.gb.FINAL.final_famliy_tree.Model.Gender;
+import ru.gb.FINAL.final_famliy_tree.View.View;
 
 import java.time.LocalDate;
 

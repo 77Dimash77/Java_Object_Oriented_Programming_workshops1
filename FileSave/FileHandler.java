@@ -1,5 +1,5 @@
-package ru.gb.final_famly_tree.FileSave;
-import ru.gb.final_famly_tree.Model.FamilyTree;
+package ru.gb.FINAL.final_famliy_tree.FileSave;
+import ru.gb.FINAL.final_famliy_tree.Model.FamilyTree;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

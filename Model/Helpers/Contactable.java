@@ -1,4 +1,4 @@
-package ru.gb.final_famly_tree.Model.Helpers;
+package ru.gb.FINAL.final_famliy_tree.Model.Helpers;
 
 
 public interface Contactable {

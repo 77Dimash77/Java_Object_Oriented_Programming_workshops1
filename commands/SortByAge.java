@@ -1,7 +1,7 @@
-package ru.gb.final_famly_tree.commands;
+package ru.gb.FINAL.final_famliy_tree.commands;
 
 
-import ru.gb.final_famly_tree.View.ConsoleUI;
+import ru.gb.FINAL.final_famliy_tree.View.ConsoleUI;
 
 public class SortByAge extends Command {
     public SortByAge(ConsoleUI consoleUI) {

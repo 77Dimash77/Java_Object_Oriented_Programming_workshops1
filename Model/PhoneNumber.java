@@ -1,4 +1,4 @@
-package ru.gb.final_famly_tree.Model;
+package ru.gb.FINAL.final_famliy_tree.Model;
 
 import java.io.Serializable;
 

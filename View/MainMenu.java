@@ -1,5 +1,5 @@
-package ru.gb.final_famly_tree.View;
-import ru.gb.final_famly_tree.commands.*;
+package ru.gb.FINAL.final_famliy_tree.View;
+import ru.gb.FINAL.final_famliy_tree.commands.*;
 import java.util.ArrayList;
 import java.util.List;
 
