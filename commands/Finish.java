@@ -1,5 +1,5 @@
-package ru.gb.homework1_famly_tree.commands;
-import ru.gb.homework1_famly_tree.View.ConsoleUI;
+package ru.gb.final_famly_tree.commands;
+import ru.gb.final_famly_tree.View.ConsoleUI;
 
 public class Finish extends Command {
     public Finish( ConsoleUI consoleUI) {

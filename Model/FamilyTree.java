@@ -51,7 +51,7 @@
 //    }
 //}
 //
-package ru.gb.homework1_famly_tree.Model;
+package ru.gb.final_famly_tree.Model;
 
 import java.io.Serializable;
 import java.util.ArrayList;

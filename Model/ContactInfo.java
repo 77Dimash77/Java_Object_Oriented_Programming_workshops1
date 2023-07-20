@@ -1,4 +1,4 @@
-package ru.gb.homework1_famly_tree.Model;
+package ru.gb.final_famly_tree.Model;
 
 
     public class ContactInfo {
