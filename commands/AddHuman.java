@@ -1,7 +1,7 @@
-package ru.gb.homework1_famly_tree.V.commands;
+package ru.gb.homework1_famly_tree.commands;
 
 
-import ru.gb.homework1_famly_tree.V.ConsoleUI;
+import ru.gb.homework1_famly_tree.View.ConsoleUI;
 
 public class AddHuman extends Command {
     public AddHuman( ConsoleUI consoleUI) {

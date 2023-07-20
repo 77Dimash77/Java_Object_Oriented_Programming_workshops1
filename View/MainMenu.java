@@ -1,9 +1,5 @@
-package ru.gb.homework1_famly_tree.V;
-
-
-
-import ru.gb.homework1_famly_tree.V.commands.*;
-
+package ru.gb.homework1_famly_tree.View;
+import ru.gb.homework1_famly_tree.commands.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +27,10 @@ public class MainMenu {
         Command command = commandList.get(choice - 1);
         command.execute();
     }
-    public  int getsize(){
+    public  int getSize(){
         return commandList.size();
-    }
-}
+    }}
+
+
+
+

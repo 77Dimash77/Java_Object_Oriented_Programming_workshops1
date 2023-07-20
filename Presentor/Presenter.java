@@ -1,9 +1,8 @@
-package ru.gb.homework1_famly_tree.P;
+package ru.gb.homework1_famly_tree.Presentor;
 
 
-import ru.gb.homework1_famly_tree.M.Enums.Gender;
-import ru.gb.homework1_famly_tree.M.Service;
-import ru.gb.homework1_famly_tree.V.View;
+import ru.gb.homework1_famly_tree.Model.Gender;
+import ru.gb.homework1_famly_tree.View.View;
 
 import java.time.LocalDate;
 
@@ -18,7 +17,6 @@ public class Presenter {
     public void addHuman(String surname, String name, Gender gender, LocalDate dateOfBirth, LocalDate
             dateOfd, Integer generation) {
         service.addHuman(surname,name,gender,dateOfBirth,dateOfd,generation);
-        //kakoito ovet
         getHumanListInfo();
 
     }
